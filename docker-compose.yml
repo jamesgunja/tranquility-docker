@@ -1,0 +1,7 @@
+version: '2'
+services:
+  tranquility:
+    image: saidimu/tranquility-docker:latest
+    command: kafka -configFile /opt/tranquility/conf/kafka.json
+    volumes:
+      - $PWD/conf:/opt/tranquility/conf
